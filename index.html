@@ -15,12 +15,20 @@
         </div>
         <div class="container">
             <div class="board"></div>
+        </div>
             <div class="buttons">
-                <button id="black" class="blackButton">Black</button>
-                <button id="red" class="redButton">Red</button>
-                <button id="green" class="greenButton">Green</button>
-                <button id="blue" class="blueButton">Blue</button>
-            </div>
+                <button id="black" class="blackButton" onclick="changeColor('black')">Black</button>
+                <button id="red" class="redButton" onclick="changeColor('red')">Red</button>
+                <button id="green" class="greenButton" onclick="changeColor('green')">Green</button>
+                <button id="blue" class="blueButton" onclick="changeColor('blue')">Blue</button>
+
+        </div>
+        <div class="input-size">
+            <input type="text" placeholder="Insert new size" onchange="changeSize(this.value)">
+            <button class="set-size">Set Size</button>
+        </div>
+        <div class="paint">
+            <button onclick="paint(size)">Paint</button>
         </div>
     </div>
 

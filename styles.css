@@ -5,7 +5,19 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(240, 240, 240);
+}
+
 .tittle{
+    display: flex;
+    justify-content: center;
+    margin: 13px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
     display: flex;
     justify-content: center;
 }
@@ -15,28 +27,37 @@
     width: 500px;
     height: 500px;
     display: grid;
-    border: 1px solid black;
+    box-shadow: 0px 0px 20px 1px rgb(122, 122, 122);
 
 }
 
-.square{
+
+/* .square{
     background-color: white;
 }
 
-.square:hover{
+.square:focus{
     background-color: black;
-    animation: bg 2s ease-out alternate infinite;
+} */
 
+/* .black-square:hover{
+    background-color: black;
 }
-@keyframes bg {
-to{
+.red-square:hover{
     background-color: red;
-}  
 }
+.blue-square:hover{
+    background-color: blue;
+}
+.green-square:hover{
+    background-color: green;
+} */
+
 
 .buttons {
     display: flex;
     justify-content: center;
+    margin: 10px;
 
 }
 
@@ -57,18 +78,61 @@ to{
 .buttons button:hover{
     cursor: pointer;
     transform: scale(1.2);
+    box-shadow: none;
 
 }
 
 .redButton{
     background-color: red;
+    box-shadow: 0px 0px 5px 2px grey;
 }
 .greenButton{
     background-color: green;
+    box-shadow: 0px 0px 5px 2px grey;
 }
 .blackButton{
     background-color: black;
+    box-shadow: 0px 0px 5px 2px grey;
 }
 .blueButton{
     background-color: blue;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+
+.input-size{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+input{
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0px 0px 3px 1px grey;
+}
+
+.set-size{
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 0px 3px 1px grey;
+    cursor: pointer;
+}
+
+.paint{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.paint button{
+        border-radius: 15px;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 0px 3px 1px grey;
+        cursor: pointer;
 }
